@@ -377,6 +377,18 @@ body {
     border-color: var(--primary-color);
 }
 
+.refresh-btn.secondary {
+    background-color: transparent;
+    border-color: var(--border-color);
+    color: var(--text-secondary);
+}
+
+.refresh-btn.secondary:hover {
+    background-color: rgba(255, 255, 255, 0.03);
+    color: var(--text-primary);
+    border-color: var(--text-secondary);
+}
+
 .refresh-icon.spinning {
     animation: spin 1s linear infinite;
 }
@@ -510,6 +522,30 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.card-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.card-action-btn {
+    background: none;
+    border: none;
+    color: var(--text-tertiary);
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all var(--transition-speed);
+}
+
+.card-action-btn:hover {
+    background-color: rgba(255, 255, 255, 0.06);
+    color: var(--text-primary);
 }
 
 .tag-badge {
